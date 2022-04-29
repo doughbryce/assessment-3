@@ -1,6 +1,65 @@
-Not implemented yet! 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+	<link href="styles.css" rel="stylesheet">
 
-<br>
-<br>
+</head>
+<body>
+	<nav>
+		<ol>
+	        <li class="crumb"><a href="./home.html">Home</a></li>
+	        <li class="crumb"><a href="./profile.html">Profile</a></li>
+	        <li class="crumb"><a href="./about.html">About</a></li>
+	    </ol>
+	</nav>
+		<h1>my name is bryce doughman</h1>
+        <img src="./images/IMG_0339.jpg" alt="good looking picture of me">
 
-<a href="./home.html"><< Back </a>
+        <nav>
+            <button class="profile-button" id="color">My Favorite Color</button>
+            <button class="profile-button" id="place">My Favorite Place</button>
+            <button class="profile-button" id="ritual">My Favorite Ritual</button>
+        </nav>
+
+        <section class="about-me">
+            <div>
+                <h2>skills</h2>
+                <ul>
+                    <li>learning what doesn't work in programming</li>
+                    <li>pretending to have fun at large social gatherings</li>
+                    <li>being liked by my dog</li>
+                </ul>
+            </div>
+            <div>
+                <h2>interests</h2>
+                <ul>
+                    <li>reading</li>
+                    <li>coding</li>
+                    <li>dogs</li>
+                </ul>
+            </div>
+            <div>
+                <h2>career goals</h2>
+                <ul>
+                    <li>constantly grow, learn, change, and explore</li>
+                    <li>make enough money that people come to me with ideas of how to make the world better</li>
+                    <li>be like nobody before me</li>
+                </ul>
+            </div>
+        </section>
+
+        <form action="" class="about-form">
+            <input type="text" name="email" placeholder="iamnotshort@tallperson.net"><label for="email">type your email here</label>
+
+            <input type="text" name="ideas" placeholder="enter your ideas here"><label for="ideas">what kind of content do you want to see</label>
+
+            <textarea name="about-you" id="about-text-box" cols="30" rows="10" placeholder="here, please tell me a little bit about yourself"></textarea>
+        </form>
+	
+
+
+	<script src="profile.js"></script>
+
+</body>
+</html>
