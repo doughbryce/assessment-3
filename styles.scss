@@ -5,6 +5,17 @@ body {
     // max-width: 500px;
     margin: 2rem auto;
     font-family: "Open Sans", sans-serif;
+    // text-align: center;
+    .button {
+        background-color: #ffa500;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
   }
   
   nav {
@@ -21,12 +32,33 @@ body {
   }
   
   a {
-      color: orange;
+      color: white;
+      font-weight: 600;
+      background-color: orange;
+      padding: 15px 32px;
+      &:hover {
+        background-color: #dc143c;
+      }
+  }
+
+  #contact {
+      background-color: white;
+      font-family: monospace;
+      display: flex;
+      justify-content: space-around;
+      div {
+        padding: 20px;
+        th, td {
+            padding: 10px;
+        }
+      }
   }
   
-  a:visited {
-      color: crimson;
-  }
+//   a:visited {
+//       color: grey;
+//       background-color: orange;
+//       padding: 15px 32px;
+//   }
   
   
   input {
@@ -38,18 +70,65 @@ body {
   }
 
   .about-me {
-      display: flex;
-      justify-content: space-around;
-    //   width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // text-align: center;
       div {
-          display: flex;
-          flex-wrap: wrap;
+          display: block;
+        //   flex-wrap: wrap;
+        //   align-self: flex-start;
+          text-align: center;
           padding: 20px;
-          border: 2px solid black;
+          margin: 5px;
+          border: 2px solid #dc143c;
+      }
+      ul {
+          text-align: left;
       }
   }
 
   .about-form {
       display: flex;
+      flex-direction: column;
       justify-content: space-evenly;
+      button {
+        align-self: center;
+        color: white;
+        font-weight: 600;
+        width: 200px;
+        background-color: orange;
+        padding: 15px 32px;
+        &:hover {
+          background-color: #dc143c;
+        }
+      }
+  }
+
+  .about-section {
+    p {
+        background-color: #efefef;
+        font-family: monospace;
+        padding: 20px;
+    }
+  }
+
+  .neighborhood-intro {
+      width: 500px;
+      p {
+          background-color: #efefef;
+          font-family: monospace;
+          font-size: larger;
+          padding: 20px;
+          margin: 0px;
+      }
+      ul {
+          color: #ffa500;
+          background-color: #efefef;
+          font-family: monospace;
+          font-size: larger;
+          padding: 20px;
+          padding-left: 50px;
+          margin: 0px;
+      }
   }

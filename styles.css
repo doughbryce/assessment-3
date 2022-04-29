@@ -6,6 +6,17 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+body .button {
+  background-color: #ffa500;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
 nav {
   border-bottom: 2px solid orange;
 }
@@ -20,11 +31,32 @@ ol {
 }
 
 a {
-  color: orange;
+  color: white;
+  font-weight: 600;
+  background-color: orange;
+  padding: 15px 32px;
 }
 
-a:visited {
-  color: crimson;
+a:hover {
+  background-color: #dc143c;
+}
+
+#contact {
+  background-color: white;
+  font-family: monospace;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#contact div {
+  padding: 20px;
+}
+
+#contact div th, #contact div td {
+  padding: 10px;
 }
 
 input {
@@ -41,24 +73,76 @@ img {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .about-me div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: block;
+  text-align: center;
   padding: 20px;
-  border: 2px solid black;
+  margin: 5px;
+  border: 2px solid #dc143c;
+}
+
+.about-me ul {
+  text-align: left;
 }
 
 .about-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.about-form button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: white;
+  font-weight: 600;
+  width: 200px;
+  background-color: orange;
+  padding: 15px 32px;
+}
+
+.about-form button:hover {
+  background-color: #dc143c;
+}
+
+.about-section p {
+  background-color: #efefef;
+  font-family: monospace;
+  padding: 20px;
+}
+
+.neighborhood-intro {
+  width: 500px;
+}
+
+.neighborhood-intro p {
+  background-color: #efefef;
+  font-family: monospace;
+  font-size: larger;
+  padding: 20px;
+  margin: 0px;
+}
+
+.neighborhood-intro ul {
+  color: #ffa500;
+  background-color: #efefef;
+  font-family: monospace;
+  font-size: larger;
+  padding: 20px;
+  padding-left: 50px;
+  margin: 0px;
 }
 /*# sourceMappingURL=styles.css.map */

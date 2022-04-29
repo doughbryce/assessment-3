@@ -11,6 +11,7 @@
 	        <li class="crumb"><a href="./home.html">Home</a></li>
 	        <li class="crumb"><a href="./profile.html">Profile</a></li>
 	        <li class="crumb"><a href="./about.html">About</a></li>
+	        <li class="crumb"><a href="./neighborhood.html">Neighborhood</a></li>
 	    </ol>
 	</nav>
 
@@ -33,21 +34,36 @@
 
 		<h2>Contact Us</h2>
 		<form id="contact">
-			How did you find us:
-			<input type="radio" name="find" value="google"><label for="google">Google</label>
-			<input type="radio" name="find" value="friend"><label for="friend">A Friend</label>
-			<input type="radio" name="find" value="other"><label for="other">Other</label>
+			<div>
+				How did you find us:
+
+				<table>
+					<tr>
+						<th>Google</th>
+						<th>A Friend</th>
+						<th>Other</th>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="find" class="table-data"></td>
+						<td><input type="checkbox" name="find" class="table-data"></td>
+						<td><input type="checkbox" name="find" class="table-data"></td>
+					</tr>
+				</table>
+				
+			</div>
+
 
 			<br><br><br>
 
-			Your name:
-			<input type="text">
+			<div class="name-and-message">
+				Your name:
+				<input type="text">
 
-			Message:
-			<input type="textarea">
+				Message:
+				<input type="textarea">
 
-			<input type="submit">
-
+				<input type="submit">
+			</div>
 
 		</form>
 
